@@ -1,0 +1,95 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  background-color: gray;
+  overflow: hidden;
+  text-shadow: 0 1px 5px rgba(0,0,0,.1);
+  font-size: 18px;
+}
+
+.bg {
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.weather {
+  position: fixed;
+  text-align: right;
+  right: 2%;
+  top: 2%;
+}
+
+.loading-circle {
+  display: inline-block;
+  background-color: #BEBEBE;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin: 0 2px 0 2px;
+}
+
+.temp {
+  display: inline-block;
+}
+
+#weather-icon {
+  vertical-align: center;
+  padding-right: 5px;
+  font-size: 2em;
+}
+
+#weather-temp {
+  font-size: 2em;
+}
+
+#weather-loc {
+  margin: 0;
+}
+
+.center-content {
+  position: absolute;
+  top: calc(50% - 4.5em);
+  left: 25%;
+  width: 50%;
+}
+
+.time {
+  font-size: 9em;
+  margin: 0;
+}
+
+.greeting {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.username {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: white;
+  border-bottom: 2px solid white;
+  text-align: center;
+  font-size: 2em;
+}
+
+.username:focus {
+  outline-width: 0;
+}
+
+.emoji-line-container {
+  position: fixed;
+  bottom: 2%;
+  left: 35%;
+  width: 30%;
+}
+
+.emoji-line {
+  margin: 0;
+  font-size: 1.5em;
+}

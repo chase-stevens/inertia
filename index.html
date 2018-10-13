@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>New Tab</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+  <link rel="stylesheet" href="css/weather-icons.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+  <div class="bg" id="bg">
+
+    <div class="top-bar">
+      <div class="weather">
+
+        <!-- Loading Animation Div -->
+        <div class="loading-container" id="loading-container">
+          <div class="loading-circle one"></div>
+          <div class="loading-circle two"></div>
+          <div class="loading-circle three"></div>
+        </div>
+
+        <!-- Weather Display -->
+        <div class="temp">
+          <i class="wi" id="weather-icon"></i>
+          <span id="weather-temp"><strong></strong></span>
+        </div>
+        <div class="location-text">
+          <p id="weather-loc"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="center-content">
+      <p class="time"><strong></strong></p>
+      <p class="greeting"></p>
+      <input class="username" type="text" name="name" autocomplete="off" />
+    </div>
+
+    <div class="emoji-line-container">
+      <p class="emoji-line" id="emoji-line"></p>
+    </div>
+
+  </div>
+
+  <script type='text/javascript' src='src/config.js'></script>
+  <script src="src/anime.min.js"></script>
+  <script src="src/main.js"></script>
+  <script src="src/loading-animation.js"></script>
+  <script src="src/weather.js"></script>
+  <script src="src/greeting.js"></script>
+
+</body>
+
+</html>
