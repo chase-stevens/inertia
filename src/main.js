@@ -31,9 +31,11 @@ $(document).ready(function(){
 
   // Sets current time and formats minutes into double digits.
   function setCurrentTime() {
-    var now = new Date();
-    mins = ('0' + now.getMinutes()).slice(-2);
-    $('.time').html(now.getHours() + ":" + mins);
+    let now = new Date();
+    let hours = now.getHours()
+    if (hours === '0') { hours = '00' }
+    let mins = ('0' + now.getMinutes()).slice(-2);
+    $('.time').html(`${hours}:${mins}`);
   }
 
   // Sets a background gradient based on the day of the week.

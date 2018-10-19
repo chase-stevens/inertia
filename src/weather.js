@@ -1,3 +1,6 @@
+// TODO: store lat and lon from getLocation() as a cookie that expires after 5 minutes
+// this limits the number of api calls
+
 var weatherKey = config.WEATHER_KEY;
 
 // Returns location of user and runs getWeather upon success
