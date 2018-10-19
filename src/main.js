@@ -32,8 +32,8 @@ $(document).ready(function(){
   // Sets current time and formats minutes into double digits.
   function setCurrentTime() {
     let now = new Date();
-    let hours = now.getHours()
-    if (hours === '0') { hours = '00' }
+    let hours = now.getHours();
+    if (hours == '0') { hours = '00' };
     let mins = ('0' + now.getMinutes()).slice(-2);
     $('.time').html(`${hours}:${mins}`);
   }
